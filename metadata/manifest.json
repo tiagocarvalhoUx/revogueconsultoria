@@ -1,0 +1,102 @@
+{
+  "site": "https://revogueconsultoria.com/",
+  "assets": [
+    {
+      "file": "logos/logo-header.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/08/cropped-cropped-5177281783832186108-1.jpg",
+      "width": 512,
+      "height": 147,
+      "format": "JPEG",
+      "bytes": 12270
+    },
+    {
+      "file": "logos/logo-completo.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/03/5181785383459556565.jpg",
+      "width": 1024,
+      "height": 1536,
+      "format": "JPEG",
+      "bytes": 114739
+    },
+    {
+      "file": "hero/advogado-hero-01.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/08/5174830134895250705.jpg",
+      "width": 800,
+      "height": 800,
+      "format": "JPEG",
+      "bytes": 71000
+    },
+    {
+      "file": "hero/advogado-hero-02.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/08/5179533583645871490.jpg",
+      "width": 1254,
+      "height": 1254,
+      "format": "JPEG",
+      "bytes": 149762
+    },
+    {
+      "file": "icons/icon-layers.png",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/03/icons-1.png",
+      "width": 349,
+      "height": 349,
+      "format": "PNG",
+      "bytes": 4734
+    },
+    {
+      "file": "icons/icon-calendar.png",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/03/icons-2.png",
+      "width": 349,
+      "height": 349,
+      "format": "PNG",
+      "bytes": 4321
+    },
+    {
+      "file": "icons/icon-home.png",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/03/icons-3.png",
+      "width": 349,
+      "height": 349,
+      "format": "PNG",
+      "bytes": 4724
+    },
+    {
+      "file": "icons/icon-focus.png",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/2026/03/icons-4.png",
+      "width": 349,
+      "height": 349,
+      "format": "PNG",
+      "bytes": 4556
+    },
+    {
+      "file": "testimonials/cliente-eric-matias.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/elementor/thumbs/pro-7-rrt3cnp6fu5kigcntn90ph2rkz8os3x6tm5cgpvr1c.jpg",
+      "width": 400,
+      "height": 400,
+      "format": "JPEG",
+      "bytes": 25759
+    },
+    {
+      "file": "testimonials/cliente-maria-ribeiro.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/elementor/thumbs/pro-8-rrt3cnp6fu5kigcntn90ph2rkz8os3x6tm5cgpvr1c.jpg",
+      "width": 400,
+      "height": 400,
+      "format": "JPEG",
+      "bytes": 20112
+    },
+    {
+      "file": "testimonials/cliente-paule-paluff.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/elementor/thumbs/pro-3-rrt3cnp6fu5kigcntn90ph2rkz8os3x6tm5cgpvr1c.jpg",
+      "width": 400,
+      "height": 400,
+      "format": "JPEG",
+      "bytes": 31215
+    },
+    {
+      "file": "testimonials/cliente-ariana-silva-site-reuse.jpg",
+      "source_url": "https://revogueconsultoria.com/wp-content/uploads/elementor/thumbs/pro-8-rrt3cnp6fu5kigcntn90ph2rkz8os3x6tm5cgpvr1c.jpg",
+      "width": 400,
+      "height": 400,
+      "format": "JPEG",
+      "bytes": 20112
+    }
+  ],
+  "note": "Ariana Silva reutiliza no site a mesma imagem associada a Maria Ribeiro; foi criada uma cópia com nome separado apenas para facilitar o mapeamento."
+}
