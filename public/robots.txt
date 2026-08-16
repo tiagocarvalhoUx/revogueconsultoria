@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://revogueconsultoria.com/sitemap.xml
+Sitemap: https://revogueconsultoria.vercel.app/sitemap.xml
