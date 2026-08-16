@@ -156,7 +156,16 @@ function scrollTo(id) {
         </div>
       </section>
 
-      <section class="relative border-y border-white/10 bg-panel py-9"><div class="container-shell flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left"><div><p class="text-xs uppercase tracking-[.24em] text-lime">Pagando um financiamento e tem dúvidas sobre o contrato?</p><h2 class="banner-phrase mt-2 font-display text-2xl text-lime"><span class="sr-only">Solicite uma análise. Atendimento personalizado.</span><span aria-hidden="true">{{ bannerTypedText }}</span><span class="typing-caret" aria-hidden="true"></span></h2></div><a :href="whatsapp" class="btn-primary">Enviar mensagem <span>↗</span></a></div></section>
+      <section class="analysis-cta" aria-labelledby="analysis-cta-title">
+        <div class="container-shell relative z-10 flex min-h-[430px] flex-col items-center justify-center text-center">
+          <h2 id="analysis-cta-title" class="analysis-cta-title">Pagando um financiamento e<br class="hidden sm:block" /> tem dúvidas sobre o contrato?</h2>
+          <div class="banner-phrase mt-4 text-lime">
+            <span class="sr-only">Solicite uma análise. Atendimento personalizado.</span>
+            <span aria-hidden="true">{{ bannerTypedText }}</span><span class="typing-caret" aria-hidden="true"></span>
+          </div>
+          <a :href="whatsapp" target="_blank" rel="noopener" class="btn-outline mt-16">Enviar mensagem <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
 
       <section id="servicos" class="section-pad"><div class="container-shell"><div class="max-w-4xl"><p class="eyebrow">Áreas de atuação</p><h2 class="section-title">Análise de financiamentos, contratos bancários e <span>consórcios</span></h2><p class="section-copy">Uma análise individual para entender a sua situação. Atuamos na análise e orientação de casos envolvendo:</p></div><div class="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4"><article v-for="(service, i) in services" :key="service[1]" class="group bg-ink p-7 transition hover:bg-[#121a15]"><img :src="service[0]" alt="" class="h-11 w-11 object-contain opacity-90" /><p class="mt-8 text-xs text-lime">0{{ i + 1 }}</p><h3 class="mt-3 font-display text-xl">{{ service[1] }}</h3><p class="mt-4 text-sm leading-6 text-white/55">{{ service[2] }}</p></article></div><div class="mt-10 text-center"><a :href="whatsapp" class="btn-outline">WhatsApp agora <span>↗</span></a></div></div></section>
 
