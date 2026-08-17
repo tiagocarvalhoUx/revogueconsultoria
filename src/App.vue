@@ -203,36 +203,23 @@ function scrollTo(id) {
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container-shell relative z-10">
-        <div class="footer-intro">
-          <h2>Revogue Consultoria</h2>
-          <p>Orientação profissional para questões financeiras, contratuais e administrativas.</p>
+    <footer class="border-t border-white/10 py-14">
+      <div class="container-shell grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
+        <div>
+          <img src="../logos/logo-header.jpg" alt="Revogue Consultoria" class="h-12 w-auto" />
+          <p class="mt-5 max-w-sm text-sm leading-6 text-white/45">Financiamentos • Contratos • Consórcios • Busca e Apreensão • Penhora • Superendividamento • CNH</p>
         </div>
-        <div class="footer-divider"></div>
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <img src="../logos/logo-completo.jpg" alt="Revogue Consultoria" />
-            <p>Financiamentos • Contratos • Consórcios • Busca e Apreensão • Penhora • Superendividamento • CNH</p>
-          </div>
-          <nav class="footer-nav" aria-label="Contato">
-            <h3>Contato</h3>
-            <a :href="whatsapp" target="_blank" rel="noopener">About Us</a>
-            <a :href="whatsapp" target="_blank" rel="noopener">Mission &amp; Vision</a>
-          </nav>
-          <nav class="footer-nav" aria-label="Termos e condições">
-            <h3>Termos &amp;<br /> condições</h3>
-            <button @click="scrollTo('#como-funciona')">Help Center</button>
-            <button @click="scrollTo('#como-funciona')">Documentation</button>
-          </nav>
-          <nav class="footer-nav" aria-label="Links de navegação">
-            <h3>Navigation Links</h3>
-            <button @click="scrollTo('#inicio')">Home</button>
-            <button @click="scrollTo('#servicos')">Services</button>
-          </nav>
+        <div>
+          <h2 class="font-display text-lg">Contato</h2>
+          <a :href="whatsapp" target="_blank" rel="noopener" class="mt-4 block text-sm text-white/55 hover:text-lime">WhatsApp: (11) 2391-3727</a>
         </div>
-        <div class="footer-bottom">Revogue Consultoria © 2026. Todos os direitos reservados.</div>
+        <nav aria-label="Navegação do rodapé">
+          <h2 class="font-display text-lg">Navegação</h2>
+          <button class="mt-4 block text-sm text-white/55 hover:text-lime" @click="scrollTo('#servicos')">Serviços</button>
+          <button class="mt-3 block text-sm text-white/55 hover:text-lime" @click="scrollTo('#avaliacoes')">Avaliações</button>
+        </nav>
       </div>
+      <div class="container-shell mt-12 border-t border-white/10 pt-7 text-xs text-white/35">Revogue Consultoria © 2026. Todos os direitos reservados.</div>
     </footer>
     <a :href="whatsapp" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar com a Revogue pelo WhatsApp">
       <span class="whatsapp-icon" aria-hidden="true">
