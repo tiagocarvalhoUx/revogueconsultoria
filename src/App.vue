@@ -189,10 +189,51 @@ function scrollTo(id) {
 
       <section id="como-funciona" class="bg-soft section-pad"><div class="container-shell grid gap-14 lg:grid-cols-[.75fr_1.25fr]"><div><p class="eyebrow">FAQ · Como funciona</p><h2 class="section-title">Do primeiro contato à análise do seu <span>caso.</span></h2></div><div class="divide-y divide-white/10 border-y border-white/10"><article v-for="(faq, i) in faqs" :key="faq[0]"><button class="flex w-full items-center justify-between py-7 text-left font-display text-lg sm:text-xl" :aria-expanded="activeFaq === i" @click="activeFaq = activeFaq === i ? -1 : i"><span>{{ faq[0] }}</span><span class="text-lime">{{ activeFaq === i ? '−' : '+' }}</span></button><div class="grid transition-all duration-300" :class="activeFaq === i ? 'grid-rows-[1fr] pb-7' : 'grid-rows-[0fr]'"><p class="overflow-hidden leading-7 text-white/55">{{ faq[1] }}</p></div></article></div></div></section>
 
-      <section class="cta-bg relative py-24 sm:py-32"><div class="absolute inset-0 bg-ink/75"></div><div class="container-shell relative z-10 text-center"><h2 class="section-title mx-auto max-w-4xl">Receba uma orientação <span>inicial sobre o seu caso</span></h2><p class="section-copy mx-auto">Informe seu e-mail e receba mais informações sobre como funciona a análise de financiamentos, contratos e consórcios.</p><form class="mx-auto mt-8 flex max-w-xl rounded-full border border-white/10 bg-panel p-2" @submit.prevent="submitted = true"><label for="email" class="sr-only">Seu e-mail</label><input id="email" required type="email" placeholder="Digite seu melhor e-mail" class="min-w-0 flex-1 bg-transparent px-5 text-sm outline-none placeholder:text-white/35" /><button class="rounded-full bg-lime px-7 py-3 text-sm font-medium text-ink">Enviar</button></form><p v-if="submitted" class="mt-4 text-sm text-lime" role="status">Recebemos seu contato. Em breve falaremos com você.</p></div></section>
+      <section class="newsletter-section" aria-labelledby="newsletter-title">
+        <div class="container-shell relative z-10 flex min-h-[610px] flex-col items-center justify-center text-center">
+          <h2 id="newsletter-title" class="newsletter-title"><span>Receba uma orientação</span><span>inicial sobre o seu caso</span></h2>
+          <p class="newsletter-copy">Informe seu e-mail e receba mais informações sobre como funciona a análise de financiamentos, contratos e consórcios.</p>
+          <form class="newsletter-form" @submit.prevent="submitted = true">
+            <label for="email" class="sr-only">Seu e-mail</label>
+            <input id="email" required type="email" inputmode="email" autocomplete="email" placeholder="Digite seu e-mail" aria-describedby="newsletter-feedback" />
+            <button type="submit">Enviar</button>
+          </form>
+          <p id="newsletter-feedback" class="newsletter-feedback" role="status">{{ submitted ? 'Recebemos seu contato. Em breve falaremos com você.' : '' }}</p>
+        </div>
+      </section>
     </main>
 
-    <footer class="border-t border-white/10 py-14"><div class="container-shell grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]"><div><img src="../logos/logo-header.jpg" alt="Revogue Consultoria" class="h-12 w-auto" /><p class="mt-5 max-w-sm text-sm leading-6 text-white/45">Financiamentos • Contratos • Consórcios • Busca e Apreensão • Penhora • Superendividamento • CNH</p></div><div><h2 class="font-display text-lg">Contato</h2><a :href="whatsapp" class="mt-4 block text-sm text-white/55 hover:text-lime">WhatsApp: (11) 2391-3727</a></div><div><h2 class="font-display text-lg">Navegação</h2><button class="mt-4 block text-sm text-white/55 hover:text-lime" @click="scrollTo('#servicos')">Serviços</button><button class="mt-3 block text-sm text-white/55 hover:text-lime" @click="scrollTo('#avaliacoes')">Avaliações</button></div></div><div class="container-shell mt-12 border-t border-white/10 pt-7 text-xs text-white/35">Revogue Consultoria © 2026. Todos os direitos reservados.</div></footer>
+    <footer class="site-footer">
+      <div class="container-shell relative z-10">
+        <div class="footer-intro">
+          <h2>Revogue Consultoria</h2>
+          <p>Orientação profissional para questões financeiras, contratuais e administrativas.</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../logos/logo-completo.jpg" alt="Revogue Consultoria" />
+            <p>Financiamentos • Contratos • Consórcios • Busca e Apreensão • Penhora • Superendividamento • CNH</p>
+          </div>
+          <nav class="footer-nav" aria-label="Contato">
+            <h3>Contato</h3>
+            <a :href="whatsapp" target="_blank" rel="noopener">About Us</a>
+            <a :href="whatsapp" target="_blank" rel="noopener">Mission &amp; Vision</a>
+          </nav>
+          <nav class="footer-nav" aria-label="Termos e condições">
+            <h3>Termos &amp;<br /> condições</h3>
+            <button @click="scrollTo('#como-funciona')">Help Center</button>
+            <button @click="scrollTo('#como-funciona')">Documentation</button>
+          </nav>
+          <nav class="footer-nav" aria-label="Links de navegação">
+            <h3>Navigation Links</h3>
+            <button @click="scrollTo('#inicio')">Home</button>
+            <button @click="scrollTo('#servicos')">Services</button>
+          </nav>
+        </div>
+        <div class="footer-bottom">Revogue Consultoria © 2026. Todos os direitos reservados.</div>
+      </div>
+    </footer>
     <a :href="whatsapp" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar com a Revogue pelo WhatsApp">
       <span class="whatsapp-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
